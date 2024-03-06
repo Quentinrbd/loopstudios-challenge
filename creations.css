@@ -1,0 +1,118 @@
+.creations {
+    width: calc(100% - 400px);
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 80px;
+}
+
+.creations .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.creations h2 {
+    font-size: 45px;
+}
+
+.title button {
+    background-color: white;
+    width: 120px;
+    height: 30px;
+    outline: none;
+    padding: 5px 20px;
+    font-family: "Alata", sans-serif;
+    color: hsl(0, 0%, 0%);
+    border: 1px solid hsl(0, 0%, 41%);
+}
+
+.content-desktop {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+    margin-bottom: 100px;
+}
+
+.earth, .arcade, .soccer, .grid, .above, .borealis, .curiosity, .fisheye{
+    position: relative;
+}
+
+.content-desktop h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-transform: uppercase;
+    left: 40px;
+    bottom: 30px;
+    font-size: 25px;
+    max-width: 140px;
+}
+
+.mobile-pictures {
+    display: none;
+}
+
+@media (orientation: portrait) {
+    .creations {
+        position: relative;
+        margin-bottom: 80px !important;
+        width: 100%;
+        margin: 0;
+    }
+
+    .mobile-pictures {
+        display: block;
+    }
+
+    .content-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .creations .title {
+        display: block;
+    }
+
+    .mobile-pictures h3 {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        font-size: 22px;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .mobile-pictures img {
+        width: 350px;
+        height: 150px;
+        margin-bottom: 15px;
+    }
+
+    .mobile-pictures button {
+        background-color: white;
+        width: 120px;
+        height: 30px;
+        outline: none;
+        padding: 5px 20px;
+        font-family: "Alata", sans-serif;
+        color: hsl(0, 0%, 0%);
+        border: 1px solid hsl(0, 0%, 41%);
+    }
+
+    .desktop-pictures {
+        display: none;
+    }
+    .creations h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .title button {
+        display: none;
+    }
+
+    .title h2 {
+        text-align: center;
+    }
+}
