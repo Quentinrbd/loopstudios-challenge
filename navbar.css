@@ -79,11 +79,11 @@ a {
         align-self: center;
         width: 100%;
         height: fit-content;
-        padding: 25px;
     }
 
     #open {
-        width: 20px;
+        height: 30px;
+        width: 30px;
     }
 
     nav {
